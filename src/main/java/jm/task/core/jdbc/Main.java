@@ -1,12 +1,13 @@
 package jm.task.core.jdbc;
 
+import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        UserServiceImpl requestStream = new UserServiceImpl();
+        UserService requestStream = new UserServiceImpl();
         requestStream.createUsersTable();
         Scanner scanner = new Scanner(System.in);
         int numberOfIterations = 0;
